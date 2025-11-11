@@ -9,7 +9,7 @@ int main() {
   char Estado1;
   char Codigo1[4];
   char Cidade1[21];
-  int Populacao1;
+  unsigned long int Populacao1;
   float Area1;
   float PIB1;
   int PontosTuristicos1;
@@ -17,7 +17,7 @@ int main() {
   char Estado2;
   char Codigo2[4];
   char Cidade2[21];
-  int Populacao2;
+  unsigned long int Populacao2;
   float Area2;
   float PIB2;
   int PontosTuristicos2;
@@ -31,7 +31,7 @@ int main() {
   printf ("Nome da Cidade: ");
   scanf (" %[^\n]", &Cidade1);
   printf ("População: ");
-  scanf ("%d", &Populacao1);
+  scanf ("%lu", &Populacao1);
   printf ("Área: ");
   scanf ("%f", &Area1);
   printf ("PIB: ");
@@ -48,7 +48,7 @@ int main() {
   printf ("Nome da Cidade: ");
   scanf (" %[^\n]", &Cidade2);
   printf ("População: ");
-  scanf ("%d", &Populacao2);
+  scanf ("%lu", &Populacao2);
   printf ("Área: ");
   scanf ("%f", &Area2);
   printf ("PIB: ");
@@ -77,7 +77,7 @@ int main() {
   printf ("Estado: %c\n", Estado1);
   printf ("Código: %s\n", Codigo1);
   printf ("Nome da Cidade: %s\n", Cidade1);
-  printf ("População: %d\n", Populacao1);
+  printf ("População: %lu\n", Populacao1);
   printf ("Área: %.2f km²\n", Area1);
   printf ("PIB: %.2f bilhões de reais\n", PIB1);
   printf ("Número de Pontos Turísticos: %d\n", PontosTuristicos1);
@@ -89,12 +89,42 @@ int main() {
   printf ("Estado: %c\n", Estado2);
   printf ("Código: %s\n", Codigo2);
   printf ("Nome da Cidade: %s\n", Cidade2);
-  printf ("População: %d\n", Populacao2);
+  printf ("População: %lu\n", Populacao2);
   printf ("Área: %.2f km²\n", Area2);
   printf ("PIB: %.2f bilhões de reais\n", PIB2);
   printf ("Número de Pontos Turísticos: %d\n", PontosTuristicos2);
   printf ("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional2);
   printf ("PIB per Capita: %.2f reais\n", PIBperCapita2);
+  printf ("\n");
+
+  // Tema 3 - Batalha de Cartas no Super Trunfo
+  // Objetivo: No nível avançado, você implementará a lógica de comparação entre duas cartas do Super Trunfo, determinando a vencedora de cada atributo e introduzindo o conceito de "Super Poder".
+
+  // Área para definição das variáveis para armazenar o Super Poder
+  float SuperPoder1 = (float) Populacao1 + Area1 + PIB1 + PontosTuristicos1 + PIBperCapita1 + (1 / DensidadePopulacional1);
+  float SuperPoder2 = (float) Populacao2 + Area2 + PIB2 + PontosTuristicos2 + PIBperCapita2 + (1 / DensidadePopulacional2);
+
+  // Área para comparar as cartas 
+  int ResultadoPopulacao = Populacao1 > Populacao2;
+  int ResultadoArea = Area1 > Area2;
+  int ResultadoPIB = PIB1 > PIB2;
+  int ResultadoPontosTur = PontosTuristicos1 > PontosTuristicos2;
+  int ResultadoDensidadePop = DensidadePopulacional1 < DensidadePopulacional2;
+  int ResultadoPIBperCapita = PIBperCapita1 > PIBperCapita2;
+  int ResultadoSuperPoder = SuperPoder1 > SuperPoder2;
+  
+  // Área parae exibir os resultados
+  printf ("Comparação de Cartas: \n");
+  printf ("Se resultado = 1, Carta 1 venceu\n");
+  printf ("se resultado = 0, Carta 2 venceu\n");
+  printf ("\n");
+  printf ("População: %d\n", ResultadoPopulacao);
+  printf ("Área: %d\n", ResultadoArea);
+  printf ("PIB: %d\n", ResultadoPIB);
+  printf ("Pontos Turísticos: %d\n", ResultadoPontosTur);
+  printf ("Densidade Populacional: %d\n", ResultadoDensidadePop);
+  printf ("PIB per Capita: %d\n", ResultadoPIBperCapita);
+  printf ("Super Poder: %d\n", ResultadoSuperPoder);
   printf ("\n");
 
   return 0;
