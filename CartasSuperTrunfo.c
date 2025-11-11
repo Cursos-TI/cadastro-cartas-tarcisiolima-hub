@@ -115,16 +115,38 @@ int main() {
   
   // Área parae exibir os resultados
   printf ("Comparação de Cartas: \n");
-  printf ("Se resultado = 1, Carta 1 venceu\n");
-  printf ("se resultado = 0, Carta 2 venceu\n");
+  //Se resultado = 1, Carta 1 venceu.
+  //Se resultado = 0, Carta 2 venceu.
   printf ("\n");
-  printf ("População: %d\n", ResultadoPopulacao);
-  printf ("Área: %d\n", ResultadoArea);
-  printf ("PIB: %d\n", ResultadoPIB);
-  printf ("Pontos Turísticos: %d\n", ResultadoPontosTur);
-  printf ("Densidade Populacional: %d\n", ResultadoDensidadePop);
-  printf ("PIB per Capita: %d\n", ResultadoPIBperCapita);
-  printf ("Super Poder: %d\n", ResultadoSuperPoder);
+  
+  if (ResultadoPopulacao == 1) {
+    printf ("População: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("População: Carta 2 (%s) venceu\n", Cidade2);}
+  
+  if (ResultadoArea == 1) {
+    printf ("Área: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Área: Carta 2 (%s) venceu\n", Cidade2);}
+
+  if (ResultadoPIB == 1) {
+    printf ("PIB: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("PIB: Carta 2 (%s) venceu\n", Cidade2);}
+
+  if (ResultadoPontosTur == 1) {
+    printf ("Pontos Turísticos: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Pontos Turísticos: Carta 2 (%s) venceu\n", Cidade2);}
+
+  if (ResultadoDensidadePop == 1) {
+    printf ("Densidade Populacional: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Densidade Populacional: Carta 2 (%s) venceu\n", Cidade2);}
+
+  if (ResultadoPIBperCapita == 1) {
+    printf ("PIB per Capita: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("PIB per Capita: Carta 2 (%s) venceu\n", Cidade2);}
+
+  if (ResultadoSuperPoder == 1) {
+    printf ("Super Poder: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Super Poder: Carta 2 (%s) venceu\n", Cidade2);}
+
   printf ("\n");
 
   return 0;
