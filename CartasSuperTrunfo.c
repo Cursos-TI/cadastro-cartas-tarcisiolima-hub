@@ -119,33 +119,60 @@ int main() {
   //Se resultado = 0, Carta 2 venceu.
   printf ("\n");
   
+  printf ("Atributo - População:\n");
+  printf ("Carta 1 - %s = %d\n", Cidade1, Populacao1);
+  printf ("Carta 2 - %s = %d\n", Cidade2, Populacao2);
   if (ResultadoPopulacao == 1) {
-    printf ("População: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("População: Carta 2 (%s) venceu\n", Cidade2);}
-  
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
+  printf ("\n");
+
+  printf ("Atributo - Área:\n");
+  printf ("Carta 1 - %s = %.2f\n", Cidade1, Area1);
+  printf ("Carta 2 - %s = %.2f\n", Cidade2, Area2);
   if (ResultadoArea == 1) {
-    printf ("Área: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("Área: Carta 2 (%s) venceu\n", Cidade2);}
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
+  printf ("\n");
 
+  printf ("Atributo - PIB:\n");
+  printf ("Carta 1 - %s = %.2f\n", Cidade1, PIB1);
+  printf ("Carta 2 - %s = %.2f\n", Cidade2, PIB2);
   if (ResultadoPIB == 1) {
-    printf ("PIB: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("PIB: Carta 2 (%s) venceu\n", Cidade2);}
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
+  printf ("\n");
 
+  printf ("Atributo - Pontos Turísticos:\n");
+  printf ("Carta 1 - %s = %d\n", Cidade1, PontosTuristicos1);
+  printf ("Carta 2 - %s = %d\n", Cidade2, PontosTuristicos2);
   if (ResultadoPontosTur == 1) {
-    printf ("Pontos Turísticos: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("Pontos Turísticos: Carta 2 (%s) venceu\n", Cidade2);}
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
+  printf ("\n");
 
+  printf ("Atributo - Densidade Populacional:\n");
+  printf ("Carta 1 - %s = %.2f\n", Cidade1, DensidadePopulacional1);
+  printf ("Carta 2 - %s = %.2f\n", Cidade2, DensidadePopulacional2);
   if (ResultadoDensidadePop == 1) {
-    printf ("Densidade Populacional: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("Densidade Populacional: Carta 2 (%s) venceu\n", Cidade2);}
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
+  printf ("\n");
 
+  printf ("Atributo - PIB per Capita:\n");
+  printf ("Carta 1 - %s = %.2f\n", Cidade1, PIBperCapita1);
+  printf ("Carta 2 - %s = %.2f\n", Cidade2, PIBperCapita2);
   if (ResultadoPIBperCapita == 1) {
-    printf ("PIB per Capita: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("PIB per Capita: Carta 2 (%s) venceu\n", Cidade2);}
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
+  printf ("\n");
 
+  printf ("Atributo - Super Poder:\n");
+  printf ("Carta 1 - %s = %.2f\n", Cidade1, SuperPoder1);
+  printf ("Carta 2 - %s = %.2f\n", Cidade2, SuperPoder2);
   if (ResultadoSuperPoder == 1) {
-    printf ("Super Poder: Carta 1 (%s) venceu\n", Cidade1);
-  } else {printf ("Super Poder: Carta 2 (%s) venceu\n", Cidade2);}
+    printf ("Resultado: Carta 1 (%s) venceu\n", Cidade1);
+  } else {printf ("Resultado: Carta 2 (%s) venceu\n", Cidade2);}
 
   printf ("\n");
 
